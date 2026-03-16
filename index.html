@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protege+</title>
+    <link rel="shortcut icon" href="images/Logo Protege+.png" type="image/x-icon">
+    <!---------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!------------------- CHAMADA GOOGLE FONTS ------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!---------------------------- HEADER ---------------------------->
+    <header>
+      <div class="logo">
+        <img src="./images/Logo Protege+.png" alt="Logo da Protege+">
+        <h2>PROTEGE+</h2>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#tipos">Tipos de denúncia</a>
+        <a href="#como">Como funciona</a>
+        <a href="#formulario">Fazer denúncia</a>
+      </nav>
+      <div class="btn-server">
+        <a href="login.html" class="btn-login">Área do Servidor</a>
+      </div>
+      
+      <div class="menu-toggle">☰</div>
+    </header>
+
+    <!---------------------------- HERO ---------------------------->
+    <section class="hero">
+        <div class="hero-txt">
+            <h1>Protege+</h1>
+            <h1>Canal Público de Denúncias</h1>
+            <p> Um espaço seguro para <strong>registrar denúncias de violência, abuso, assédio e outras situações de risco.</strong> Seu relato ajuda autoridades e instituições a agir mais rápido para proteger a comunidade.</p>
+        </div>
+        <a href="#formulario" class="cta">Fazer denúncia</a>
+    </section>
+
+    <!---------------------------- SOBRE ---------------------------->
+    <section id="sobre">
+      <div class="sobre-txt">
+        <h2 class="title">Sobre a plataforma</h2>
+        <div>
+          <p>O site Protege+ é uma plataforma digital <strong>criada para facilitar o registro de denúncias relacionadas à segurança e à proteção de direitos.</strong></p>
+          <p>Por meio do sistema, <strong>cidadãos podem comunicar situações que precisam de atenção das autoridades</strong>, contribuindo para uma resposta mais rápida e organizada.</p>      
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------- TIPOS ---------------------------->
+    <section id="tipos" class="tipos">
+      <h2 class="title">Tipos de denúncia</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Violência doméstica</h3>
+          <p>Agressões físicas, psicológicas ou ameaças no ambiente familiar</p>
+        </div>
+        <div class="card">
+          <h3>Abuso</h3>
+          <p>Violência contra crianças, adolescentes, idosos ou pessoas vulneráveis</p>
+        </div>
+        <div class="card">
+          <h3>Assédio</h3>
+          <p>Condutas abusivas que causam constrangimento ou intimidação</p>
+        </div>
+        <div class="card">
+          <h3>Discriminação</h3>
+          <p>Casos de preconceito ou tratamento desigual contra pessoa ou grupo</p>
+        </div>
+        <div class="card">
+          <h3>Outros</h3>
+          <p>Qualquer situação que represente risco ou violação de direitos</p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------- COMO ---------------------------->
+    <section id="como" class="como">
+      <h2 class="title">Como funciona</h2>
+
+      <div class="steps">
+        <div class="step-card">
+          <img src="./images/circ 1.png" alt="Número 1">
+          <h3>Descreva o ocorrido</h3>
+          <p>Preencha o formulário com as informações disponíveis</p>
+        </div>
+
+        <div class="step-card">
+          <img src="./images/circ 2.png" alt="Número 2">
+          <h3>Envie o registro</h3>
+          <p>A denúncia será armazenada no sistema com segurança</p>
+        </div>
+
+        <div class="step-card">
+          <img src="./images/circ 3.png" alt="Número 3">
+          <h3>Encaminhamento</h3>
+          <p>Os dados são analisados e direcionados aos órgãos responsáveis</p>
+        </div>
+      </div>
+    </section>
+    
+    <!---------------------------- FORMS ---------------------------->
+    <section id="formulario" class="formulario">
+      <h2 class="title">Registrar denúncia</h2>
+
+      <form id="formDenuncia" class="formDenuncia">
+        <label>👤| Nome (ou escreva "Anônimo")</label>
+        <input type="text" id="nome" placeholder="Digite seu nome ou escreva Anônimo'" required />
+        <div class="formDenuncia-double">
+          <div class="formDenuncia-solo">
+            <label>✉️| Email</label>
+            <input type="email" placeholder="Email para contato" required />
+          </div>
+          <div class="formDenuncia-solo">
+            <label>📞| Telefone</label>
+            <input type="tel" placeholder="Telefone para contato" required />
+          </div>
+        </div>
+        
+        <div class="formDenuncia-double">
+          <div class="formDenuncia-solo">
+            <label>📝| Tipo de Denúncia</label>
+            <select required>
+              <option value="" disabled selected> Selecione o tipo de denúncia </option>
+              <option>Violência doméstica</option>
+              <option>Abuso sexual</option>
+              <option>Assédio</option>
+              <option>Discriminação</option>
+              <option>Outros</option>
+            </select>
+          </div>
+
+          <div class="formDenuncia-solo">
+            <label>🗺️| Estado</label>
+            <select id="estado" required>
+              <option value="">Selecione o estado do ocorrido</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="formDenuncia-double">
+          <div class="formDenuncia-solo">
+            <label>🗾| Cidade</label>
+            <select id="cidade" required>
+              <option value="">Selecione a cidade do ocorrido</option>
+            </select>
+          </div>
+
+          <div class="formDenuncia-solo">
+            <label>📍| Local</label>
+            <input type="text" placeholder="Local do ocorrido (Exemplo: Avenida Santos 911 - Edíficio São Jonas)" required />
+          </div>
+        </div>
+
+        <label>🗣️| Descrição do Ocorrido</label>
+        <textarea placeholder="Descreva o que aconteceu com o máximo de informação possível" required ></textarea>
+
+        <button type="submit">Enviar denúncia</button>
+      </form>
+    </section>
+
+    <!---------------------------- FOOTER ---------------------------->
+    <footer>© Protege+ todos direitos reservados</footer>
+
+    <script src="./js/cidades.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

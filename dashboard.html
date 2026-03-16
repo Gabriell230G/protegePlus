@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Protege+</title>
+    <link rel="shortcut icon" href="images/Logo Protege+.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!---------------------------- HEADER ---------------------------->
+    <header>
+      <div class="logo">
+        <img src="./images/Logo Protege+.png" alt="">
+        <h2>PROTEGE+</h2>
+      </div>
+      <div class="btn-server">
+        <a href="index.html" class="btn-login">Sair</a>
+      </div>
+    </header>
+    <!---------------------------- DASHBOARD ---------------------------->
+    <section class="dashboard">
+
+      <h2 class="title">Painel de Monitoramento</h2>
+
+      <div class="cards-dashboard">
+        <div class="card-dash">
+          <h3>Total de denúncias</h3>
+          <p id="totalDenuncias">0</p>
+        </div>
+
+        <div class="card-dash">
+          <h3>Denúncias anônimas</h3>
+          <p id="anonimas">0</p>
+        </div>
+      </div>
+
+      <div class="graficos">
+        <div class="grafico-box">
+          <h3>Denúncias por tipo</h3>
+          <canvas id="graficoTipos"></canvas>
+        </div>
+        <div class="grafico-box">
+          <h3>Estados com mais denúncias</h3>
+          <canvas id="graficoEstados"></canvas>
+        </div>
+      </div>
+
+      <h2 class="title">Lista de denúncias</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Tipo</th>
+              <th>Estado</th>
+              <th>Cidade</th>
+              <th>Local</th>
+              <th>Descrição</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaDenuncias">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!---------------------------- FOOTER ---------------------------->
+    <footer class="footer-dashboard">© Protege+ todos direitos reservados</footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/dashboard.js"></script>
+  </body>
