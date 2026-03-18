@@ -92,16 +92,6 @@ O painel administrativo permite acompanhar os dados de forma clara e estratégic
 
 ---
 
-## 📷 Demonstração
-
-O sistema permite:
-
-➽ Registrar denúncias de forma simples  
-➽ Visualizar dados em um painel interativo  
-➽ Analisar informações para tomada de decisão  
-
----
-
 ## 📚 Contexto Acadêmico
 
 Este projeto foi desenvolvido como parte do:
@@ -121,6 +111,11 @@ Com foco em propor soluções tecnológicas capazes de melhorar serviços públi
 ➽ Simulação de um sistema aplicável ao setor público  
 
 ---
+## 🌐 Acesse o projeto
+
+🔗 https://gabriell230g.github.io/protegePlus/
+
+---
 
 ## 🚀 Possíveis Evoluções
 
@@ -132,7 +127,13 @@ Com foco em propor soluções tecnológicas capazes de melhorar serviços públi
 
 ---
 
-## ✨ Autor
+## 📫 Contato
 
-Desenvolvido por **Gabriel Gomes**  
-Focado em criar soluções digitais com impacto real através da tecnologia.
+<p align="left">
+  <a href="https://www.linkedin.com/in/gabriel-vasconcellos-gomes-76a246246/">
+    <img src="https://img.shields.io/badge/LinkedIn-Conectar-blue?style=for-the-badge&logo=linkedin">
+  </a>
+  <a href="mailto:gabriel.gomes0410@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contato-red?style=for-the-badge&logo=gmail">
+  </a>
+</p>
